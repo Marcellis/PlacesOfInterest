@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class GeoObjectViewHolder extends RecyclerView.ViewHolder {
 
-        //{
+
 
         public TextView geoName;
         public ImageView geoImage;

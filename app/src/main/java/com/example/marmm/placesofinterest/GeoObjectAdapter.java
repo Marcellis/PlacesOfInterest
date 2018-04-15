@@ -41,14 +41,6 @@ public class GeoObjectAdapter extends RecyclerView.Adapter<GeoObjectViewHolder> 
         // Populate the views with the data from the list
         holder.geoImage.setImageResource(geoObject.getmGeoImageName());
         holder.geoName.setText(geoObject.getmGeoName());
-        // The whole layout is used for the onClickListener instead of individual views
-        // inside the viewHolder
-        holder.view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, geoObject.getmGeoName() + " is selected",    Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
 
