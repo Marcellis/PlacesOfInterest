@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerView.OnIt
         RecyclerView.LayoutManager mLayoutManager = new StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL);
 
         mGeoRecyclerView.setLayoutManager(mLayoutManager);
+        mGeoRecyclerView.setHasFixedSize(true);
         GeoObjectAdapter mAdapter = new GeoObjectAdapter(this, mGeoObjects);
         mGeoRecyclerView.setAdapter(mAdapter);
         mGeoRecyclerView.addOnItemTouchListener(this);
